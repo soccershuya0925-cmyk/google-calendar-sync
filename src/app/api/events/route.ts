@@ -48,7 +48,7 @@ export async function POST(req: NextRequest) {
 
       return calendar.events.insert({
         calendarId: 'primary',
-        resource: event,
+        requestBody: event,
       });
     });
 
